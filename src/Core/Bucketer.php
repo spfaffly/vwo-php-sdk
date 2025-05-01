@@ -166,7 +166,7 @@ class Bucketer
     * Copyright 2016-2019, Optimizely, used under Apache 2.0 License.
     * Source - https://github.com/optimizely/php-sdk/blob/master/src/Optimizely/Bucketer.php
     */
-    public static function getBucketVal($userId, $campaign = [], bool $is_new_bucketing_enabled = true, $disableLogs = false)
+    public static function getBucketVal($userId, $campaign = [], $is_new_bucketing_enabled = true, $disableLogs = false)
     {
         # if (isset($campaign["isBucketingSeedEnabled"]) && $campaign["isBucketingSeedEnabled"]) {
         if ($campaign!=null && ($is_new_bucketing_enabled || (isset($campaign["isBucketingSeedEnabled"]) && $campaign["isBucketingSeedEnabled"]))) {
